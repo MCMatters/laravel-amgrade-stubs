@@ -9,5 +9,15 @@
     ],
     "require": {
         "laravel/framework": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "McMatters\\LaravelAmgradeStubs\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "discovery": "McMatters\\LaravelAmgradeStubs\\ServiceProvider"
+        }
     }
 }

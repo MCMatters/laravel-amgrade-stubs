@@ -61,8 +61,22 @@ class ServiceProvider extends BaseServiceProvider
     /**
      * @return void
      */
+    public function boot(): void
+    {
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/../config/amgrade-stubs.php' => $this->app->configPath(),
+            ], 'config');
+        }
+    }
+
+    /**
+     * @return void
+     */
     public function register(): void
     {
+        $this->mergeConfigFrom(__DIR__.'/../config/amgrade-stubs.php', 'amgrade-stubs');
+
         $commands = $this->app['config']->get('amgrade-stubs.commands');
 
         foreach ($this->commands as $command => $abstract) {
