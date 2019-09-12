@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace McMatters\LaravelAmgradeStubs;
 
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use McMatters\LaravelAmgradeStubs\Console\Commands\{
     CacheTableCommand, ChannelMakeCommand, ConsoleMakeCommand,
@@ -17,6 +18,8 @@ use McMatters\LaravelAmgradeStubs\Console\Commands\{
 };
 use McMatters\LaravelAmgradeStubs\Database\Migrations\MigrationCreator;
 
+use function array_values;
+
 use const false;
 
 /**
@@ -24,7 +27,7 @@ use const false;
  *
  * @package McMatters\LaravelAmgradeStubs\Console\Commands
  */
-class ServiceProvider extends BaseServiceProvider
+class ServiceProvider extends BaseServiceProvider  implements DeferrableProvider
 {
     /**
      * @var array
@@ -84,6 +87,14 @@ class ServiceProvider extends BaseServiceProvider
                 $this->{"register{$command}"}($abstract);
             }
         }
+    }
+
+    /**
+     * @return array
+     */
+    public function provides(): array
+    {
+        return array_values($this->commands);
     }
 
     /**
