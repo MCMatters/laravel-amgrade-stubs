@@ -1,0 +1,33 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use Illuminate\Console\Command;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends Command
+{
+    /**
+     * @var string
+     */
+    protected $signature = 'dummy:command';
+
+    /**
+     * @var string
+     */
+    protected $description = 'Command description';
+
+    /**
+     * @return void
+     */
+    public function handle(): void
+    {
+        //
+    }
+}

@@ -1,0 +1,84 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use DummyRootNamespaceHttp\Controllers\Controller;
+use DummyFullModelClass;
+use Illuminate\Http\{Request, Response};
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends Controller
+{
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function index(): Response
+    {
+        //
+    }
+
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function create(): Response
+    {
+        //
+    }
+
+    /**
+     * @param \Illuminate\Http\Request $request
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request): Response
+    {
+        //
+    }
+
+    /**
+     * @param \DummyFullModelClass $DummyModelVariable
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function show(DummyModelClass $DummyModelVariable): Response
+    {
+        //
+    }
+
+    /**
+     * @param \DummyFullModelClass $DummyModelVariable
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(DummyModelClass $DummyModelVariable): Response
+    {
+        //
+    }
+
+    /**
+     * @param \Illuminate\Http\Request $request
+     * @param \DummyFullModelClass $DummyModelVariable
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, DummyModelClass $DummyModelVariable): Response
+    {
+        //
+    }
+
+    /**
+     * @param \DummyFullModelClass $DummyModelVariable
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(DummyModelClass $DummyModelVariable): Response
+    {
+        //
+    }
+}

@@ -1,0 +1,42 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use Illuminate\Contracts\Validation\Rule;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass implements Rule
+{
+    /**
+     * DummyClass constructor.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * @param string $attribute
+     * @param mixed $value
+     *
+     * @return bool
+     */
+    public function passes($attribute, $value): bool
+    {
+        //
+    }
+
+    /**
+     * @return string
+     */
+    public function message(): string
+    {
+        return 'The validation error message.';
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "mcmatters/laravel-amgrade-stubs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Borzyonok",
+            "email": "dima.matters@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^6.0"
+    }
+}

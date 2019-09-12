@@ -1,0 +1,23 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use Exception;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends Exception
+{
+    /**
+     * @return void
+     */
+    public function report(): void
+    {
+        //
+    }
+}

@@ -1,0 +1,37 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use DummyFullEvent;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass implements ShouldQueue
+{
+    use InteractsWithQueue;
+
+    /**
+     * DummyClass constructor.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * @param DummyEvent $event
+     *
+     * @return void
+     */
+    public function handle(DummyEvent $event): void
+    {
+        //
+    }
+}

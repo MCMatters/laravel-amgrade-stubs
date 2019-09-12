@@ -1,0 +1,18 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use NamespacedDummyUserModel;
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass
+{
+    use HandlesAuthorization;
+}

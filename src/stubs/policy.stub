@@ -1,0 +1,108 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use NamespacedDummyUserModel;
+use NamespacedDummyModel;
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass
+{
+    use HandlesAuthorization;
+    
+    /**
+     * Determine whether the user can view any DocDummyPluralModel.
+     *
+     * @param \NamespacedDummyUserModel $user
+     *
+     * @return bool
+     */
+    public function viewAny(DummyUser $user): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can view the DocDummyModel.
+     *
+     * @param \NamespacedDummyUserModel $user
+     * @param \NamespacedDummyModel $dummyModel
+     *
+     * @return bool
+     */
+    public function view(DummyUser $user, DummyModel $dummyModel): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can create DocDummyPluralModel.
+     *
+     * @param \NamespacedDummyUserModel $user
+     *
+     * @return bool
+     */
+    public function create(DummyUser $user): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can update the DocDummyModel.
+     *
+     * @param \NamespacedDummyUserModel $user
+     * @param \NamespacedDummyModel $dummyModel
+     *
+     * @return bool
+     */
+    public function update(DummyUser $user, DummyModel $dummyModel): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can delete the DocDummyModel.
+     *
+     * @param \NamespacedDummyUserModel $user
+     * @param \NamespacedDummyModel $dummyModel
+     *
+     * @return bool
+     */
+    public function delete(DummyUser $user, DummyModel $dummyModel): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can restore the DocDummyModel.
+     *
+     * @param \NamespacedDummyUserModel $user
+     * @param \NamespacedDummyModel $dummyModel
+     *
+     * @return bool
+     */
+    public function restore(DummyUser $user, DummyModel $dummyModel): bool
+    {
+        //
+    }
+
+    /**
+     * Determine whether the user can permanently delete the DocDummyModel.
+     *
+     * @param \NamespacedDummyUserModel $user
+     * @param \NamespacedDummyModel $dummyModel
+     *
+     * @return bool
+     */
+    public function forceDelete(DummyUser $user, DummyModel $dummyModel): bool
+    {
+        //
+    }
+}

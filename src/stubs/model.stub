@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends Model
+{
+    /**
+     * @var string
+     */
+    protected $table = 'DummyModelTable';
+
+    /**
+     * @var array
+     */
+    protected $fillable = [];
+
+    /**
+     * @var array
+     */
+    protected $casts = [];
+}

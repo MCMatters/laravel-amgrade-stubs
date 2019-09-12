@@ -1,0 +1,34 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Foundation\Bus\Dispatchable;
+
+/**
+ * Class DummyClass
+ *
+ * @package DummyNamespace
+ */
+class DummyClass
+{
+    use Dispatchable, Queueable;
+
+    /**
+     * DummyClass constructor.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * @return void
+     */
+    public function handle(): void
+    {
+        //
+    }
+}
