@@ -1,10 +1,12 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace McMatters\LaravelAmgradeStubs\Console\Commands;
 
 use Illuminate\Queue\Console\FailedTableCommand;
+
+use function str_replace;
 
 /**
  * Class QueueFailedTableCommand

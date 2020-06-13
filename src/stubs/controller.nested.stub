@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace DummyNamespace;
 
@@ -53,8 +53,10 @@ class DummyClass extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function show(ParentDummyModelClass $ParentDummyModelVariable, DummyModelClass $DummyModelVariable): Response
-    {
+    public function show(
+        ParentDummyModelClass $ParentDummyModelVariable,
+        DummyModelClass $DummyModelVariable
+    ): Response {
         //
     }
 
@@ -64,8 +66,10 @@ class DummyClass extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function edit(ParentDummyModelClass $ParentDummyModelVariable, DummyModelClass $DummyModelVariable): Response
-    {
+    public function edit(
+        ParentDummyModelClass $ParentDummyModelVariable,
+        DummyModelClass $DummyModelVariable
+    ): Response {
         //
     }
 
@@ -90,8 +94,10 @@ class DummyClass extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ParentDummyModelClass $ParentDummyModelVariable, DummyModelClass $DummyModelVariable): Response
-    {
+    public function destroy(
+        ParentDummyModelClass $ParentDummyModelVariable,
+        DummyModelClass $DummyModelVariable
+    ): Response {
         //
     }
 }

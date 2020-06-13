@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace McMatters\LaravelAmgradeStubs\Console\Commands;
 
@@ -34,7 +34,11 @@ class ControllerMakeCommand extends BaseControllerMakeCommand
 
         if (null === $stub && $this->option('api')) {
             $stub = __DIR__.'/../../stubs/controller.api.stub';
-        } elseif (null !== $stub && $this->option('api') && !$this->option('invokable')) {
+        } elseif (
+            null !== $stub &&
+            $this->option('api') &&
+            !$this->option('invokable')
+        ) {
             $stub = str_replace('.stub', '.api.stub', $stub);
         }
 

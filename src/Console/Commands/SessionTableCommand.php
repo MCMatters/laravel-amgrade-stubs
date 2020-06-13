@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace McMatters\LaravelAmgradeStubs\Console\Commands;
 
@@ -22,7 +22,10 @@ class SessionTableCommand extends BaseSessionTableCommand
     {
         $fullPath = $this->createBaseMigration();
 
-        $this->files->put($fullPath, $this->files->get(__DIR__.'/../../stubs/database.stub'));
+        $this->files->put(
+            $fullPath,
+            $this->files->get(__DIR__.'/../../stubs/database.stub')
+        );
 
         $this->info('Migration created successfully!');
 

@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace McMatters\LaravelAmgradeStubs\Console\Commands;
 
@@ -33,7 +33,7 @@ class ModelMakeCommand extends BaseModelMakeCommand
     /**
      * @return void
      */
-    protected function createMigration()
+    protected function createMigration(): void
     {
         $table = $this->getModelTable();
 

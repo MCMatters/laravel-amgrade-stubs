@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 namespace McMatters\LaravelAmgradeStubs\Console\Commands;
 
@@ -22,7 +22,10 @@ class NotificationTableCommand extends BaseNotificationTableCommand
     {
         $fullPath = $this->createBaseMigration();
 
-        $this->files->put($fullPath, $this->files->get(__DIR__.'/../../stubs/notifications.stub'));
+        $this->files->put(
+            $fullPath,
+            $this->files->get(__DIR__.'/../../stubs/notifications.stub')
+        );
 
         $this->info('Migration created successfully!');
 
